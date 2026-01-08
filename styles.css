@@ -35,18 +35,18 @@ nav ul li a{
     color: black;
 }
 
-nav button{
+.btn{
     background-color: #30B868;
     color: white;
-    padding: 12px;
+    padding: 16px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-weight: 600;
-    
+    font-size: 16px;
 }
 
-nav button:hover {
+.btn:hover {
     background-color: #279a56;
     transition: 100ms ease;
 }
@@ -54,9 +54,85 @@ nav button:hover {
 
 #hero{
     width: 100%;
-    flex-grow: 1;
+
     background: url(assets/hero-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#ea{
+    height: 35px;
+    width: 230px;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-radius: 50px;
+}
+#ea p{
+    color: #30B868;
+    font-weight: 500;
+    
+}
+
+#hero h1{
+    font-size: 80px;
+}
+
+.white{
+    color: white;
+}
+.green{
+    color: #30B868;
+}
+
+.hero-text{
+    text-align: center;
+    color: white;
+    line-height: 2;
+}
+
+.hero-button{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.hero-button .btn{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.rbtn{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    border: 1px white solid;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.rbtn:hover{
+    background-color: black;
+    color: white;
+    border: 1px black solid;
 
 }
