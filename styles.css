@@ -310,6 +310,7 @@ nav ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 510px;
 }
 
 .challenge-container{
@@ -336,6 +337,13 @@ nav ul li a:hover{
     color: #627382;
     padding-bottom: 8px;
 }
+
+.challenge-container p:nth-of-type(2){
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #627382;
+}
 .challenge-container button{
     display: flex;
     align-items: center;
@@ -347,3 +355,58 @@ nav ul li a:hover{
 
 }
 
+footer{
+    background-color: #001931;
+    padding: 120px 120px 50px 120px;
+    color: white;
+    max-width: 100vw;
+    min-height: 300px;
+    width: 100%;
+}
+
+.foot-top{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.foot-link h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.foot-link ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.foot-bottom{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.foot-bottom hr{
+
+    width: 100%;
+    margin-top: 80px;
+    border: none;
+    border-top: 1px #374149 solid;
+}
+
+.foot-bottom p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #FAFAFA;
+}
