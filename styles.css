@@ -10,7 +10,7 @@ header{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    /* overflow-y: auto; */
 }
 
 nav{
@@ -135,4 +135,93 @@ nav ul li a{
     color: white;
     border: 1px black solid;
 
+}
+
+
+#card-section{
+    width: 100%;
+    padding-top: 60px;
+    margin: 0 auto;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+#card-section h3{
+    font-size: 55px;
+    font-weight: bold;
+}
+#card-section p{
+    font-size: 16px;
+    color: #627382;
+    font-weight: 400;
+
+}
+
+.card{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.scard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    min-height: 300px;
+    padding: 60px 30px;
+}
+
+.shape{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #F95555;
+}
+
+.scard:nth-child(1) .shape {
+    background-image: url(assets/Vector.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.scard:nth-child(2) .shape {
+    background-image: url(assets/Bookmarks.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.scard:nth-child(3) .shape {
+    background-image: url(assets/Brain.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.scard:nth-child(4) .shape {
+    background-image: url(assets/Info.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.scard h4{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.scard p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #627382;
 }
