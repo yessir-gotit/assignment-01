@@ -10,10 +10,11 @@ header{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /* overflow-y: auto; */
+
 }
 
 nav{
+    max-height: 80px;
     margin: 0px auto;
     padding: 15px;
     width: 100%;
@@ -167,6 +168,9 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     gap: 24px;
+    position: relative;
+    z-index: 5;
+
 }
 
 .scard{
@@ -179,7 +183,7 @@ nav ul li a{
     width: 100%;
     max-width: 350px;
     border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
     min-height: 300px;
     padding: 60px 30px;
 }
@@ -225,3 +229,70 @@ nav ul li a{
     font-weight: 400;
     color: #627382;
 }
+
+
+#brain{
+    margin: 0 auto;
+    margin-top: -50px;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    min-height: 840px;
+}
+
+#brain-main{
+    padding: 120px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    
+}
+
+.brain-text{
+    text-align: left;
+    max-width: 600px;
+}
+
+.brain-text p:nth-child(1){
+    font-size: 16px;
+    font-weight: 500;
+    color: #30B868;
+}
+
+.brain-text h3{
+    padding-top: 16px;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.brain-text p:nth-child(3){
+    padding-top: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #627382;
+}
+
+.brain-text ul{
+    list-style-type: none;
+    padding-top: 40px;
+}
+
+.brain-text ul li{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.brain-text ul li::before{
+    content: url(assets/CheckCircle.png);
+}
+
