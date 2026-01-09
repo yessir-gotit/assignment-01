@@ -186,7 +186,7 @@ nav ul li a:hover{
     text-align: center;
     gap: 16px;
     width: 100%;
-    max-width: 320px;
+    max-width: 300px;
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
     min-height: 300px;
